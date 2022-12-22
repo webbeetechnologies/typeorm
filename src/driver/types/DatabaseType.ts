@@ -2,6 +2,7 @@
  * Database type.
  */
 export type DatabaseType =
+    | "flashdb"
     | "mysql"
     | "postgres"
     | "cockroachdb"

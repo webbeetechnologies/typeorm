@@ -5,22 +5,24 @@ import { SqliteConnectionOptions } from "../driver/sqlite/SqliteConnectionOption
 import { SqlServerConnectionOptions } from "../driver/sqlserver/SqlServerConnectionOptions"
 import { OracleConnectionOptions } from "../driver/oracle/OracleConnectionOptions"
 import { MongoConnectionOptions } from "../driver/mongodb/MongoConnectionOptions"
-import { CordovaConnectionOptions } from "../driver/cordova/CordovaConnectionOptions"
-import { SqljsConnectionOptions } from "../driver/sqljs/SqljsConnectionOptions"
-import { ReactNativeConnectionOptions } from "../driver/react-native/ReactNativeConnectionOptions"
-import { NativescriptConnectionOptions } from "../driver/nativescript/NativescriptConnectionOptions"
-import { ExpoConnectionOptions } from "../driver/expo/ExpoConnectionOptions"
-import { AuroraMysqlConnectionOptions } from "../driver/aurora-mysql/AuroraMysqlConnectionOptions"
-import { SapConnectionOptions } from "../driver/sap/SapConnectionOptions"
+import { CordovaConnectionOptions }        from "../driver/cordova/CordovaConnectionOptions"
+import { SqljsConnectionOptions }          from "../driver/sqljs/SqljsConnectionOptions"
+import { ReactNativeConnectionOptions }    from "../driver/react-native/ReactNativeConnectionOptions"
+import { NativescriptConnectionOptions }   from "../driver/nativescript/NativescriptConnectionOptions"
+import { ExpoConnectionOptions }           from "../driver/expo/ExpoConnectionOptions"
+import { AuroraMysqlConnectionOptions }    from "../driver/aurora-mysql/AuroraMysqlConnectionOptions"
+import { SapConnectionOptions }            from "../driver/sap/SapConnectionOptions"
 import { AuroraPostgresConnectionOptions } from "../driver/aurora-postgres/AuroraPostgresConnectionOptions"
-import { BetterSqlite3ConnectionOptions } from "../driver/better-sqlite3/BetterSqlite3ConnectionOptions"
-import { CapacitorConnectionOptions } from "../driver/capacitor/CapacitorConnectionOptions"
-import { SpannerConnectionOptions } from "../driver/spanner/SpannerConnectionOptions"
+import { BetterSqlite3ConnectionOptions }  from "../driver/better-sqlite3/BetterSqlite3ConnectionOptions"
+import { CapacitorConnectionOptions }      from "../driver/capacitor/CapacitorConnectionOptions"
+import { SpannerConnectionOptions }        from "../driver/spanner/SpannerConnectionOptions"
+import { FlashdbConnectionOptions }        from "../driver/flashdb/FlashdbConnectionOptions";
 
 /**
  * DataSourceOptions is an interface with settings and options for specific DataSource.
  */
 export type DataSourceOptions =
+    | FlashdbConnectionOptions
     | MysqlConnectionOptions
     | PostgresConnectionOptions
     | CockroachConnectionOptions
